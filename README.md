@@ -14,12 +14,14 @@ TODO
 
 Configure the library to use the specified settings.  
 
-- `token` - string : The user private token.
+- `token` - *string* : The user private token.
 
 `downloadFile(settings: DownloadFileInputInterface)`
 
 Returns the download link for the specified file
 
-- `settings` - DownloadFileInputInterface : The file specification.
+- `settings` - *DownloadFileInputInterface*: The file specification.
 
-- `throw API1FichierResponseNotOk(statusCode: number, message: string)` if the api returns an error.
+- `returns` - *DownloadFileOuputInterface*
+
+- `throw` *API1FichierResponseNotOk(statusCode: number, message: string)*: If the api returns an error.
