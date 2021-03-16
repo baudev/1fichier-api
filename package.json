@@ -1,0 +1,13 @@
+{
+  "name": "1fichier-api",
+  "version": "1.0.0",
+  "description": "1fichier API in TypeScript",
+  "repository": "https://github.com/baudev/1fichier-api",
+  "main": "build/main.js",
+  "scripts": {
+    "start": "tsc && node build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Baudev",
+  "license": "MIT"
+}
