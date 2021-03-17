@@ -47,3 +47,10 @@ Edits the file attributes
 - `returns` - EditFileOuputInterface*
 
 - `throw` *API1FichierResponseNotOk(statusCode: number, message: string)*: If the api returns an error.
+
+# TODO
+
+- [ ] Add missing routes
+- [ ] Add tests
+
+Don't hesitate to contribute to the repository!
