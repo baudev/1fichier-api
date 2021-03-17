@@ -1,5 +1,7 @@
 # 1fichier API
 
+![](https://img.shields.io/npm/v/1fichier-api) ![](https://img.shields.io/github/license/baudev/1fichier-api)
+
 This library is designed for interactions with the [1fichier API](https://1fichier.com/api.html).
 
 # Installation
