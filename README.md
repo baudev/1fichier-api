@@ -27,3 +27,23 @@ Returns the download link for the specified file
 - `returns` - *DownloadFileOuputInterface*
 
 - `throw` *API1FichierResponseNotOk(statusCode: number, message: string)*: If the api returns an error.
+
+`copyFile(settings: CopyFileInputInterface)`
+
+Imports the file to your personnal account
+
+- `settings` - *CopyFileInputInterface*: The files to import and where to store them.
+
+- `returns` - *CopyFileOutputInterface*
+
+- `throw` *API1FichierResponseNotOk(statusCode: number, message: string)*: If the api returns an error.
+
+`editFile(settings: EditFileInputInterface)`
+
+Edits the file attributes
+
+- `settings` - *EditFileInputInterface*: The attributes to be changed and the files concerned.
+
+- `returns` - EditFileOuputInterface*
+
+- `throw` *API1FichierResponseNotOk(statusCode: number, message: string)*: If the api returns an error.
