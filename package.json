@@ -9,7 +9,7 @@
     "/dist"
   ],
   "scripts": {
-    "start": "tsc && node build/main.js",
+    "start": "tsc && node build/API1fichier.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Baudev",

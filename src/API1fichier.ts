@@ -1,5 +1,6 @@
 import fetch from "node-fetch"
 import API1FichierResponseNotOk from "./exceptions/Api1FichierResponseNotOk";
+import CopyFileInputInterface from "./interfaces/CopyFileInputInterface";
 import DownloadFileInputInterface from "./interfaces/DownloadFileInputInterface";
 
 export default class API1fichier {
@@ -12,6 +13,18 @@ export default class API1fichier {
      */
     constructor(token: string) {
         this.token = token;
+    }
+
+    /**
+     * Imports the file to your personnal account
+     * @param settings 
+     * @returns {Promise<CopyFileOutputInterface>}
+     */
+    public copyFile(settings: CopyFileInputInterface) {
+        return this.apiCall('/file/cp.cgi', {
+            method: 'POST',
+            body: JSON.stringify(settings)
+        })
     }
 
     /**
