@@ -2,6 +2,7 @@ import fetch from "node-fetch"
 import API1FichierResponseNotOk from "./exceptions/Api1FichierResponseNotOk";
 import CopyFileInputInterface from "./interfaces/CopyFileInputInterface";
 import DownloadFileInputInterface from "./interfaces/DownloadFileInputInterface";
+import EditFileInputInterface from "./interfaces/EditFileInputInterface";
 
 export default class API1fichier {
 
@@ -40,6 +41,18 @@ export default class API1fichier {
     }
 
     /**
+     * Edits the file attributes
+     * @param settings 
+     * @returns {Promise<EditFileOuputInterface>}
+     */
+    public editFile(settings: EditFileInputInterface) {
+        return this.apiCall('/file/chattr.cgi', {
+            method: 'POST',
+            body: JSON.stringify(settings)
+        })
+    }
+
+    /**
      * Makes a request to the v1 1fichier API
      * @param endpoint Url endpoint e.g /download/get_token.cgi
      * @param options Request options like method or body
@@ -66,7 +79,5 @@ export default class API1fichier {
                 .catch((e: API1FichierResponseNotOk) => reject(e));
         }));
     }
-
-
 
 }
