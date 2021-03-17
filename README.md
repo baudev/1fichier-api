@@ -4,7 +4,9 @@ This library is designed for interactions with the [1fichier API](https://1fichi
 
 # Installation
 
-TODO
+```
+npm install 1fichier-api
+```
 
 # Usage
 

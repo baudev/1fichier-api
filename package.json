@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "1fichier API in TypeScript",
   "repository": "https://github.com/baudev/1fichier-api",
-  "main": "build/main.js",
+  "main": "build/API1fichier.js",
+  "types": "build/API1fichier.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "start": "tsc && node build/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"

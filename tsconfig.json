@@ -1,12 +1,16 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2016",
+        "target": "es2015",
         "jsx": "preserve",
         "strictFunctionTypes": true,
         "sourceMap": true,
-        "outDir": "build"
+        "outDir": "build",
+        "declaration": true
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
         "node_modules",
         "**/node_modules/*"
