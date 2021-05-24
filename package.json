@@ -6,7 +6,7 @@
   "main": "build/API1fichier.js",
   "types": "build/API1fichier.d.ts",
   "files": [
-    "/dist/**/*"
+    "/build/**/*"
   ],
   "scripts": {
     "build": "tsc"
