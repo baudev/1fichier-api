@@ -1,6 +1,6 @@
 {
   "name": "1fichier-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "1fichier API in TypeScript",
   "repository": "https://github.com/baudev/1fichier-api",
   "main": "build/API1fichier.js",
