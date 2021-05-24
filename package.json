@@ -6,13 +6,18 @@
   "main": "build/API1fichier.js",
   "types": "build/API1fichier.d.ts",
   "files": [
-    "/dist"
+    "/dist/**/*"
   ],
+  "scripts": {
+    "build": "tsc"
+  },
   "author": "Baudev",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^14.14.35",
     "node-fetch": "^2.6.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
 }
